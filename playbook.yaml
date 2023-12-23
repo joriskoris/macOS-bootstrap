@@ -1,0 +1,56 @@
+#!/usr/bin/env ansible-playbook
+- hosts: localhost
+  vars:
+    mac_store:
+    - 1352778147
+    homebrew_tap:
+    - homebrew/cask-fonts
+    homebrew:
+    - neovim
+    - eza
+    - bat
+    - mas
+    - pyenv
+    - pyenv-virtualenv
+    - just
+    - antidote
+    - nvm
+    - chezmoi
+    - gnupg
+    - pinentry-mac
+    - ripgrep
+    - tmux
+    - tpm
+    homebrew_cask:
+    - docker
+    - muzzle
+    - raycast
+    - soundsource
+    - rectangle-pro
+    - fantastical
+    - proxyman
+    - bitwarden
+    - protonmail-bridge
+    - tableplus
+    - karabiner-elements
+    - copilot
+    - iterm2
+    - font-hack
+    - font-hack-nerd-font
+  tasks:
+  - name: Tap Homebrew casks
+    community.general.homebrew_tap:
+      name: "{{ homebrew_tap }}"
+      state: present
+  - name: Install Homebrew apps
+    community.general.homebrew:
+      name: "{{ homebrew }}"
+      state: present
+  - name: Install Homebrew casks
+    community.general.homebrew_cask:
+      name: "{{ homebrew_cask }}"
+      state: present
+  - name: Install AppStore apps
+    community.general.mas:
+      id: "{{ mac_store }}"
+      
