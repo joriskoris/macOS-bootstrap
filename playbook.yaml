@@ -21,6 +21,9 @@
     - ripgrep
     - tmux
     - tpm
+    - kubernetes-cli
+    - k9s
+    - yq
     homebrew_cask:
     - docker
     - muzzle
@@ -38,13 +41,13 @@
     - font-hack
     - font-hack-nerd-font
   tasks:
-  - name: Tap Homebrew casks
-    community.general.homebrew_tap:
-      name: "{{ homebrew_tap }}"
-      state: present
   - name: Install Homebrew apps
     community.general.homebrew:
       name: "{{ homebrew }}"
+      state: present
+  - name: Tap Homebrew casks
+    community.general.homebrew_tap:
+      name: "{{ homebrew_tap }}"
       state: present
   - name: Install Homebrew casks
     community.general.homebrew_cask:
