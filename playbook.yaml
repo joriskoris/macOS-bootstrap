@@ -1,10 +1,6 @@
 #!/usr/bin/env ansible-playbook
 - hosts: localhost
   vars:
-    mac_store:
-    - 1352778147
-    homebrew_tap:
-    - homebrew/cask-fonts
     homebrew:
     - neovim
     - eza
@@ -24,6 +20,8 @@
     - kubernetes-cli
     - k9s
     - yq
+    homebrew_tap:
+    - homebrew/cask-fonts
     homebrew_cask:
     - docker
     - muzzle
@@ -32,7 +30,6 @@
     - rectangle-pro
     - fantastical
     - proxyman
-    - bitwarden
     - protonmail-bridge
     - tableplus
     - karabiner-elements
@@ -40,6 +37,8 @@
     - iterm2
     - font-hack
     - font-hack-nerd-font
+    mac_store:
+    - 1352778147
   tasks:
   - name: Install Homebrew apps
     community.general.homebrew:
