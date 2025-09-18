@@ -25,7 +25,6 @@ brew_packages:
   - { name: mongosh, profiles: [work, personal] }
   - { name: mongodb-database-tools, profiles: [work, personal] }
   - { name: pulumi, profiles: [work, personal] }
-  - { name: claude-cmd, profiles: [work, personal] }
   - { name: opentofu, profiles: [work, personal] }
   - { name: k6, profiles: [work, personal] }
   - { name: act, profiles: [work] }
@@ -44,6 +43,7 @@ brew_cask_packages:
   - { name: karabiner-elements, profiles: [work, personal] }
   - { name: wezterm, profiles: [work, personal] }
   - { name: claude, profiles: [work, personal] }
+  - { name: claude-code, profiles: [work, personal] }
   - { name: orbstack, profiles: [work, personal] }
   - { name: syncthing, profiles: [personal] }
   - { name: discord, profiles: [personal] }
@@ -62,4 +62,5 @@ brew_cask_packages:
   - { name: slack, profiles: [work] }
   # fonts
   - { name: font-fira-code-nerd-font, profiles: [work, personal] }
+  - { name: font-iosevka-nerd-font, profiles: [work, personal] }
 

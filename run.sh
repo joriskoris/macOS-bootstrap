@@ -21,15 +21,9 @@ if [ ! -f "pyproject.toml" ]; then
   uv add pyyaml
 fi
 
-printf "\nGenerating Brewfile for profile: %s..." "${1:-all}"
+printf "\nGenerating Brewfile for profile: %s..." "${1:-personal}"
 
-if [ "$1" = "work" ]; then
-    uv run python generate_brewfile.py work > Brewfile
-    echo "Generated work profile Brewfile"
-else
-    uv run python generate_brewfile.py > Brewfile
-    echo "Generated full profile Brewfile"
-fi
+uv run python generate_brewfile.py $1 > Brewfile
 
 printf "\nInstalling packages with brew bundle..."
 brew bundle install

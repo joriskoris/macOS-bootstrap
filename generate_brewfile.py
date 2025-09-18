@@ -21,5 +21,5 @@ def generate_brewfile(profile='all'):
     return '\n'.join(brewfile_content)
 
 if __name__ == "__main__":
-    profile = sys.argv[1] if len(sys.argv) > 1 else 'all'
+    profile = sys.argv[1] if len(sys.argv) > 1 else 'personal'
     print(generate_brewfile(profile))
