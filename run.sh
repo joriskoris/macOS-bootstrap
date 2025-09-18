@@ -8,18 +8,31 @@ else
   echo "Homebrew is already installed."
 fi
 
+# Install uv if not already installed
+if ! which uv &> /dev/null; then
+  echo "Installing uv..."
+  brew install uv
+fi
 
-brew_install() {
-    printf "\nInstalling %s" "$1"
-    if brew list "$1" &>/dev/null; then
-        echo "${1} is already installed"
-    else
-        brew install "$1" && echo "$1 is installed"
-    fi
-}
+# Set up Python project if not exists
+if [ ! -f "pyproject.toml" ]; then
+  echo "Setting up Python project..."
+  uv init --python 3.12
+  uv add pyyaml
+fi
 
-brew_install "ansible"
+printf "\nGenerating Brewfile for profile: %s..." "${1:-all}"
 
-printf "\nRunning Ansible playbook to bootstrap macOS..."
+if [ "$1" = "work" ]; then
+    uv run python generate_brewfile.py work > Brewfile
+    echo "Generated work profile Brewfile"
+else
+    uv run python generate_brewfile.py > Brewfile
+    echo "Generated full profile Brewfile"
+fi
 
-ansible-playbook setup.yaml
+printf "\nInstalling packages with brew bundle..."
+brew bundle install
+
+printf "\nCleaning up packages not in Brewfile..."
+brew bundle cleanup --force

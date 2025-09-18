@@ -1,0 +1,65 @@
+brew_packages:
+  - { name: neovim, profiles: [work, personal] }
+  - { name: antidote, profiles: [work, personal] }
+  - { name: starship, profiles: [work, personal] }
+  - { name: chezmoi, profiles: [work, personal] }
+  - { name: pyenv, profiles: [work, personal] }
+  - { name: uv, profiles: [work, personal] }
+  - { name: nvm, profiles: [work, personal] }
+  - { name: rustup, profiles: [work, personal] }
+  - { name: httpie, profiles: [work, personal] }
+  - { name: mintoolkit, profiles: [work, personal] }
+  - { name: eza, profiles: [work, personal] }
+  - { name: bat, profiles: [work, personal] }
+  - { name: doctl, profiles: [work, personal] }
+  - { name: cloudflare-cli4, profiles: [work, personal] }
+  - { name: awscli, profiles: [work, personal] }
+  - { name: pass, profiles: [personal] }
+  - { name: kubernetes-cli, profiles: [work, personal] }
+  - { name: k9s, profiles: [work, personal] }
+  - { name: helm, profiles: [work, personal] }
+  - { name: kind, profiles: [work, personal] }
+  - { name: just, profiles: [work, personal] }
+  - { name: ripgrep, profiles: [work, personal] }
+  - { name: the_silver_searcher, profiles: [work, personal] }
+  - { name: mongosh, profiles: [work, personal] }
+  - { name: mongodb-database-tools, profiles: [work, personal] }
+  - { name: pulumi, profiles: [work, personal] }
+  - { name: claude-cmd, profiles: [work, personal] }
+  - { name: opentofu, profiles: [work, personal] }
+  - { name: k6, profiles: [work, personal] }
+  - { name: act, profiles: [work] }
+  - { name: aws-elasticbeanstalk, profiles: [work] }
+  - { name: tmux, profiles: [work, personal] }
+  - { name: tpm, profiles: [work, personal] }
+
+brew_cask_packages:
+  - { name: zed, profiles: [work] }
+  - { name: swish, profiles: [work, personal] }
+  - { name: protonvpn, profiles: [personal] }
+  - { name: proton-mail-bridge, profiles: [personal] }
+  - { name: little-snitch, profiles: [personal] }
+  - { name: bitwarden, profiles: [personal] }
+  - { name: proxyman, profiles: [work, personal] }
+  - { name: karabiner-elements, profiles: [work, personal] }
+  - { name: wezterm, profiles: [work, personal] }
+  - { name: claude, profiles: [work, personal] }
+  - { name: orbstack, profiles: [work, personal] }
+  - { name: syncthing, profiles: [personal] }
+  - { name: discord, profiles: [personal] }
+  - { name: elgato-wave-link, profiles: [work] }
+  - { name: elgato-stream-deck, profiles: [work] }
+  - { name: elgato-camera-hub, profiles: [work] }
+  - { name: obsidian, profiles: [work, personal] }
+  - { name: notion, profiles: [work, personal] }
+  - { name: vlc, profiles: [personal] }
+  - { name: mongodb-compass, profiles: [work, personal] }
+  - { name: lens, profiles: [work, personal] }
+  - { name: beekeeper-studio, profiles: [work, personal] }
+  - { name: firefox@developer-edition, profiles: [work, personal] }
+  - { name: google-chrome, profiles: [work] }
+  - { name: redis-insight, profiles: [work, personal] }
+  - { name: slack, profiles: [work] }
+  # fonts
+  - { name: font-fira-code-nerd-font, profiles: [work, personal] }
+
