@@ -1,3 +1,6 @@
+brew_taps:
+  - { name: cormacrelf/tap, profiles: [work, personal] }
+
 brew_packages:
   - { name: neovim, profiles: [work, personal] }
   - { name: antidote, profiles: [work, personal] }
@@ -31,6 +34,12 @@ brew_packages:
   - { name: aws-elasticbeanstalk, profiles: [work] }
   - { name: tmux, profiles: [work, personal] }
   - { name: tpm, profiles: [work, personal] }
+  - { name: btop, profiles: [work, personal] }
+  - { name: cormacrelf/tap/dark-notify, profiles: [work, personal] }
+  - { name: imagemagick, profiles: [personal] }
+  - { name: argocd, profiles: [personal] }
+  - { name: gh, profiles: [personal] }
+  - { name: kubeseal, profiles: [personal] }
 
 brew_cask_packages:
   - { name: zed, profiles: [work] }
@@ -45,7 +54,7 @@ brew_cask_packages:
   - { name: claude, profiles: [work, personal] }
   - { name: claude-code, profiles: [work, personal] }
   - { name: orbstack, profiles: [work, personal] }
-  - { name: syncthing, profiles: [personal] }
+  - { name: syncthing-app, profiles: [personal] }
   - { name: discord, profiles: [personal] }
   - { name: elgato-wave-link, profiles: [work] }
   - { name: elgato-stream-deck, profiles: [work] }
@@ -62,7 +71,9 @@ brew_cask_packages:
   - { name: slack, profiles: [work] }
   - { name: boop, profiles: [work, personal] }
   - { name: antinote, profiles: [work, personal] }
+  - { name: ngrok, profiles: [personal] }
+  - { name: cloudflare-warp, profiles: [personal] }
+  - { name: shapr3d, profiles: [personal] }
   # fonts
   - { name: font-fira-code-nerd-font, profiles: [work, personal] }
   - { name: font-iosevka-nerd-font, profiles: [work, personal] }
-

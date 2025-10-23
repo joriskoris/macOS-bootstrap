@@ -8,6 +8,12 @@ def generate_brewfile(profile='all'):
 
     brewfile_content = []
 
+    # Add taps first
+    if 'brew_taps' in config:
+        for tap in config['brew_taps']:
+            if profile == 'all' or profile in tap['profiles']:
+                brewfile_content.append(f'tap "{tap["name"]}"')
+
     # Add brew packages
     for pkg in config['brew_packages']:
         if profile == 'all' or profile in pkg['profiles']:
