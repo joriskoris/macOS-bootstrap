@@ -25,7 +25,6 @@ brew_packages:
   - { name: just, profiles: [work, personal] }
   - { name: ripgrep, profiles: [work, personal] }
   - { name: the_silver_searcher, profiles: [work, personal] }
-  - { name: mongosh, profiles: [work, personal] }
   - { name: mongodb-database-tools, profiles: [work, personal] }
   - { name: pulumi, profiles: [work, personal] }
   - { name: opentofu, profiles: [work, personal] }
