@@ -3,10 +3,12 @@ brew_taps:
 
 brew_packages:
   - { name: neovim, profiles: [work, personal] }
+  - { name: ansible, profiles: [work, personal] }
   - { name: antidote, profiles: [work, personal] }
   - { name: starship, profiles: [work, personal] }
   - { name: chezmoi, profiles: [work, personal] }
   - { name: pyenv, profiles: [work, personal] }
+  - { name: pyenv-virtualenv, profiles: [work, personal] }
   - { name: uv, profiles: [work, personal] }
   - { name: nvm, profiles: [work, personal] }
   - { name: rustup, profiles: [work, personal] }
@@ -76,6 +78,7 @@ brew_cask_packages:
   - { name: cloudflare-warp, profiles: [personal] }
   - { name: shapr3d, profiles: [personal] }
   - { name: github, profiles: [work] }
+  - { name: session-manager-plugin, profiles: [work] }
   # fonts
   - { name: font-fira-code-nerd-font, profiles: [work, personal] }
   - { name: font-iosevka-nerd-font, profiles: [work, personal] }
