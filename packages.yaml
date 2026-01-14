@@ -9,6 +9,7 @@ brew_packages:
   - { name: chezmoi, profiles: [work, personal] }
   - { name: pyenv, profiles: [work, personal] }
   - { name: pyenv-virtualenv, profiles: [work, personal] }
+  - { name: pipenv, profiles: [work, personal] }
   - { name: uv, profiles: [work, personal] }
   - { name: nvm, profiles: [work, personal] }
   - { name: rustup, profiles: [work, personal] }
