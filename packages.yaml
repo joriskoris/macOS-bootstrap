@@ -44,6 +44,8 @@ brew_packages:
   - { name: gh, profiles: [work, personal] }
   - { name: shellcheck, profiles: [work, personal] }
   - { name: syncthing, profiles: [personal] }
+  - { name: cloudflare-wrangler, profiles: [personal, work] }
+  - { name: terraform, profiles: [personal, work] }
 
 brew_cask_packages:
   - { name: zed, profiles: [work] }
@@ -82,6 +84,9 @@ brew_cask_packages:
   - { name: shapr3d, profiles: [personal] }
   - { name: github, profiles: [work] }
   - { name: session-manager-plugin, profiles: [work] }
+  - { name: bruno, profiles: [personal, work] }
+  - { name: adguard, profiles: [personal] }
+  - { name: zed, profiles: [personal, work] }
   # fonts
   - { name: font-fira-code-nerd-font, profiles: [work, personal] }
   - { name: font-iosevka-nerd-font, profiles: [work, personal] }
