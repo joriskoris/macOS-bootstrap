@@ -46,6 +46,10 @@ brew_packages:
   - { name: syncthing, profiles: [personal] }
   - { name: cloudflare-wrangler, profiles: [personal, work] }
   - { name: terraform, profiles: [personal, work] }
+  - { name: infracost, profiles: [work] }
+  - { name: sops, profiles: [work] }
+  - { name: age, profiles: [work] }
+  - { name: pre-commit, profiles: [work] }
 
 brew_cask_packages:
   - { name: zed, profiles: [work] }
@@ -79,7 +83,7 @@ brew_cask_packages:
   - { name: slack, profiles: [work] }
   - { name: boop, profiles: [work, personal] }
   - { name: antinote, profiles: [work, personal] }
-  - { name: ngrok, profiles: [personal, work] }
+  # - { name: ngrok, profiles: [personal, work] }
   - { name: cloudflare-warp, profiles: [personal] }
   - { name: shapr3d, profiles: [personal] }
   - { name: github, profiles: [work] }
