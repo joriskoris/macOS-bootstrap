@@ -47,9 +47,10 @@ brew_packages:
   - { name: cloudflare-wrangler, profiles: [personal, work] }
   - { name: terraform, profiles: [personal, work] }
   - { name: infracost, profiles: [work] }
-  - { name: sops, profiles: [work] }
-  - { name: age, profiles: [work] }
-  - { name: pre-commit, profiles: [work] }
+  - { name: sops, profiles: [personal, work] }
+  - { name: age, profiles: [personal, work] }
+  - { name: pre-commit, profiles: [personal, work] }
+  - { name: glow, profiles: [personal, work] }
 
 brew_cask_packages:
   - { name: zed, profiles: [work] }
@@ -91,6 +92,7 @@ brew_cask_packages:
   - { name: bruno, profiles: [personal, work] }
   - { name: adguard, profiles: [personal] }
   - { name: zed, profiles: [personal, work] }
+  - { name: copilot-money, profiles: [personal] }
   # fonts
   - { name: font-fira-code-nerd-font, profiles: [work, personal] }
   - { name: font-iosevka-nerd-font, profiles: [work, personal] }
