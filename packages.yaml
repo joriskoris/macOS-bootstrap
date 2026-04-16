@@ -4,6 +4,7 @@ brew_taps:
 brew_packages:
   - { name: neovim, profiles: [work, personal] }
   - { name: ansible, profiles: [work, personal] }
+  - { name: ansible-builder, profiles: [work, personal] }
   - { name: antidote, profiles: [work, personal] }
   - { name: starship, profiles: [work, personal] }
   - { name: chezmoi, profiles: [work, personal] }
@@ -51,6 +52,9 @@ brew_packages:
   - { name: age, profiles: [personal, work] }
   - { name: pre-commit, profiles: [personal, work] }
   - { name: glow, profiles: [personal, work] }
+  - { name: repomix, profiles: [personal, work] }
+  - { name: tree-sitter, profiles: [personal, work] }
+
 
 brew_cask_packages:
   - { name: zed, profiles: [work] }
@@ -84,6 +88,7 @@ brew_cask_packages:
   - { name: slack, profiles: [work] }
   - { name: boop, profiles: [work, personal] }
   - { name: antinote, profiles: [work, personal] }
+  - { name: raycast, profiles: [work, personal] }
   # - { name: ngrok, profiles: [personal, work] }
   - { name: cloudflare-warp, profiles: [personal] }
   - { name: shapr3d, profiles: [personal] }
