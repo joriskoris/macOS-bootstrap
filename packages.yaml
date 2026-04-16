@@ -97,7 +97,6 @@ brew_cask_packages:
   - { name: bruno, profiles: [personal, work] }
   - { name: adguard, profiles: [personal] }
   - { name: zed, profiles: [personal, work] }
-  - { name: copilot-money, profiles: [personal] }
   # fonts
   - { name: font-fira-code-nerd-font, profiles: [work, personal] }
   - { name: font-iosevka-nerd-font, profiles: [work, personal] }
